@@ -11464,6 +11464,7 @@ header.masthead h1, header.masthead .h1 {
 header.google-masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
+  width: 100%;
   background: black;
   background-position: center;
   background-repeat: no-repeat;
@@ -11496,6 +11497,9 @@ header.google-masthead h1, header.google-masthead .h1 {
   }
 }
 
+.google-header{
+	margin-bottom: 30%;	
+}
 /*.drop-menu{
 	padding: 10px;
 	border-radius: 10px 10px 0 0;
@@ -11515,43 +11519,43 @@ header.google-masthead h1, header.google-masthead .h1 {
 #rock1{
   position:absolute;
   left:-30px;
-  top:0px;
+  top:-20px;
   width:40px;
   height:40px;
   transform:rotate(45deg);
-  animation:b 6s infinite;
+  animation:a 6s infinite;
 }
 #rock2{
   position:absolute;
   left:200px;
-  top:-25px;
-  width:40px;
-  height:40px;
-  transform:rotate(45deg);
-  animation:a 6s infinite;
-}
-#rock3{
-  position:absolute;
-  left:585px;
-  top:5px;
-  width:40px;
-  height:40px;
-  transform:rotate(45deg);
-  animation:a 6s infinite;
-}
-#rock4{
-  position:absolute;
-  left:385px;
-  top:90px;
+  top:-45px;
   width:40px;
   height:40px;
   transform:rotate(45deg);
   animation:b 6s infinite;
 }
+#rock3{
+  position:absolute;
+  left:585px;
+  top:-15px;
+  width:40px;
+  height:40px;
+  transform:rotate(45deg);
+  animation:c 6s infinite;
+}
+#rock4{
+  position:absolute;
+  left:385px;
+  top:70px;
+  width:40px;
+  height:40px;
+  transform:rotate(45deg);
+  animation:d 6s infinite;
+}
 #rock5{
   position:absolute;
   left:60px;
-  top:140px;
+  top:120px;
   width:25px;
   height:25px;
   transform:rotate(45deg);
@@ -11560,36 +11564,36 @@ header.google-masthead h1, header.google-masthead .h1 {
 #rock6{
   position:absolute;
   left:500px;
-  top:-25px;
+  top:-45px;
   width:25px;
   height:25px;
   transform:rotate(45deg);
-  animation:a 6s infinite;
+  animation:b 6s infinite;
 }
 #rock7{
   position:absolute;
   left:60px;
-  top:-55px;
+  top:-75px;
   width:25px;
   height:25px;
   transform:rotate(45deg);
-  animation:b 6s infinite;
+  animation:c 6s infinite;
 }
 #rock8{
   position:absolute;
   left:530px;
-  top:130px;
+  top:110px;
   width:25px;
   height:25px;
   transform:rotate(45deg);
-  animation:b 6s infinite;
+  animation:d 6s infinite;
 }
 @keyframes a{
   0%{
     background:transparent;
   }
   50%{
-    background:darkorange;
+    background:#4285f4;
   }
   100%{
     background:transparent;
@@ -11597,13 +11601,35 @@ header.google-masthead h1, header.google-masthead .h1 {
 }
 @keyframes b{
   0%{
-    background:darkorange;
+    background:#ea4335;
   }
   50%{
     background:transparent;
   }
   100%{
-    background:darkorange;
+    background:#ea4335;
+  }
+}
+@keyframes c{
+  0%{
+    background:transparent;
+  }
+  50%{
+    background:#fbbc05;
+  }
+  100%{
+    background:transparent;
+  }
+}
+@keyframes d{
+  0%{
+    background:#34a853;
+  }
+  50%{
+    background:transparent;
+  }
+  100%{
+    background:#34a853;
   }
 }
 #div1{
@@ -11612,12 +11638,12 @@ header.google-masthead h1, header.google-masthead .h1 {
   top:calc(80% - 150px);
   width:600px;
   height:100px;
-  border:20px solid rgb(60, 60, 60);
   border-radius:100px;
 }
 #diva1{
   position:absolute;
   width:590px;
+  margin-top: -5%;
   height:90px;
   border:5px solid orange;
   border-radius:100px;
@@ -11626,45 +11652,52 @@ header.google-masthead h1, header.google-masthead .h1 {
 }
 #img2{
   position: absolute;
-  margin-left:100%;
-  top:5px;
+  margin-left:-5%;
+  top:10px;
   width:60px;
-  z-index: 1;
 }
+
 #divaa1{
   position:absolute;
-  left:150px;
+  margin-left: 40%;
   width:80px;
   height:80px;
-  border:5px solid orange;
+  border:5px solid transparent;
   border-radius:100px;
-  background:orange;
+  background:transparent;
   transition:.6s;
 }
+
 #divaa1:hover{
-  height:250px;
-  width: 130px
+  height:300px;
+  width: 130px;
+  background: orange;
+  border-color: orange;
 }
-#divaa1:hover > #divaaa1{
-  height:180px;
-  border:5px solid orange;
-}
+
 #divaaa1{
   position:absolute;
-  margin-top:50%;
   left:75px;
   width:100px;
   height:80px;
-  border:5px solid orange;
+  border:5px solid transparent;
   border-radius:100px;
-  background:orange;
+  background:transparent;
   transition:.6s;
 }
+
+#divaa1:hover > #divaaa1{
+  height:240px;
+  border:5px solid orange;
+  background: orange;
+}
+
 #btna1{
   position:absolute;
   top:10%;
+  left: 10%;
   background:transparent;
-  width:75px;
+  width:150px;
   color:transparent;
   padding-top:5px;
   padding-bottom:5px;
@@ -11674,18 +11707,20 @@ header.google-masthead h1, header.google-masthead .h1 {
   border-radius:100px;
   cursor:pointer;
   transition:.6s;
+  z-index: 1;
 }
 #divaa1:hover > #btna1{
   top:90px;
-  color:black;
-  background:dimgrey;
+  color:white;
+  background:black;
   padding-bottom:5px;
 }
 #btna2{
   position:absolute;
   top:10%;
+  left: 10%;
   background:transparent;
-  width:75px;
+  width:150px;
   color:transparent;
   padding-top:5px;
   padding-bottom:5px;
@@ -11695,18 +11730,20 @@ header.google-masthead h1, header.google-masthead .h1 {
   border-radius:100px;
   cursor:pointer;
   transition:.6s;
+  z-index: 1;
 }
 #divaa1:hover > #btna2{
   top:140px;
-  color:black;
-  background:dimgrey;
+  color:white;
+  background:black;
   padding-bottom:5px;
 }
 #btna3{
   position:absolute;
   top:10%;
+  left: 10%;
   background:transparent;
-  width:75px;
+  width:150px;
   color:transparent;
   padding-top:5px;
   padding-bottom:5px;
@@ -11716,10 +11753,11 @@ header.google-masthead h1, header.google-masthead .h1 {
   border-radius:100px;
   cursor:pointer;
   transition:.6s;
+  z-index: 1;
 }
 #divaa1:hover > #btna3{
   top:190px;
-  color:black;
-  background:dimgrey;
+  color:white;
+  background:black;
   padding-bottom:5px;
 }
