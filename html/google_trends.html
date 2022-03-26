@@ -20,7 +20,7 @@
         <link href="../css/styles.css" rel="stylesheet" />
 
     </head>
-    <body id="page-top">
+    <body id="page-top" class="googleBody">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
@@ -37,62 +37,58 @@
             </div>
         </nav>
         <header class="google-masthead">
-            <div class="container px-4 px-lg-5 h-100">
-                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-8 align-self-end">
-                        <h1 class="google-header text-white font-weight-bold">Google Trends All In One Place</h1>
-                        <hr class="divider" />
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
-<!--			<div class="btn-group">
-				<button type="button" class="drop-menu btn-danger dropdown-toggle" data-toggle="drop-menu-items" aria-haspopup="true" aria-expanded="false">Trends</button>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" value="daily" href="#">Daily Trends</option>
-						<a class="dropdown-item" value="realTimeTrends" href="#">Trends in Real Time</option>
-						<a class="dropdown-item" value="interestOverTime" href="#">Trends Over Time</option>
+		<div class="container px-4 px-lg-5 h-100">
+			<div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+				<div class="col-lg-8 align-self-end">
+					<h1 class="google-header text-white font-weight-bold">Google Trends All In One Place</h1>
+					<hr class="divider" />
+				</div>
+				<div class="col-lg-8 align-self-baseline">
+					<!-- Must spend tomorrow adding this bad boy. Will seriously make for a cool website -->
+
+					<div class="dayMode">
+						<button id="lightMode"></button>
 					</div>
-</div> -->
+					<!-- -->
 
-<!-- NEW BUTTON GROUP -->
+					<!-- NEW BUTTON GROUP -->
 
-<div id="div1">
-	<div id="rock1"></div>
-	<div id="rock2"></div>
-	<div id="rock3"></div>
-	<div id="rock4"></div>
-	<div id="rock5"></div>
-	<div id="rock6"></div>
-	<div id="rock7"></div>
-	<div id="rock8"></div>
-	<div id="diva1">
-		<img id="img2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Windows_Settings_app_icon.png/768px-Windows_Settings_app_icon.png">
-		<div id="divaa1">
-			<input id="btna1" type="button" value="Daily Trends" placeholder="Daily Trends">
-			<input id="btna2" type="button" value="Real Time Trends" placeholder="Real Time Trends">
-			<input id="btna3" type="button" value="Trends Over Time" placeholder="Trends Over Time">
-			<div id="divaaa1"></div>
-		</div>
-	</div>
-</div>
+					<div id="div1">
+						<div id="rock1"></div>
+						<div id="rock2"></div>
+						<div id="rock3"></div>
+						<div id="rock4"></div>
+						<div id="rock5"></div>
+						<div id="rock6"></div>
+						<div id="rock7"></div>
+						<div id="rock8"></div>
+						<div id="diva1">
+							<img id="img2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Windows_Settings_app_icon.png/768px-Windows_Settings_app_icon.png">
+							<div id="divaa1">
+								<input id="btna1" type="button" value="Daily Trends" placeholder="Daily Trends">
+								<input id="btna2" type="button" value="Real Time Trends" placeholder="Real Time Trends">
+								<input id="btna3" type="button" value="Trends Over Time" placeholder="Trends Over Time">
+								<div id="divaaa1"></div>
+							</div>
+						</div>
+					</div>
+					<div class="countryContainer">
+						<select id="countries" class="selectpicker"name="countrySelection"></select>
+					</div>
+					<div class="dateContainer">
+						<form action="">
+							<input type="date" id="calendar" name="calendar">
+						</form>
+					</div>
+					<div class="keywordContainer">
+						<input id="keyword" type="text" placeholder="Enter Keyword">
+					</div></br>
+				</div>
 
-		    <!-- NEW BUTTON GROUP -->
-<!--		    <div class="btn-group">
-			    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Trends</button>
-			    <div class="dropdown-menu">
-				    <a class="dropdown-item" href="#" value='daily'>Daily Trends</a>
-				    <a class="dropdown-item" href="#" value='realTimeTrends'>Trends in Real Time</a>
-				    <a class="dropdown-item" href="#" value='interestOverTime'>Trends Over Time</a>
-				    <div class="dropdown-divider"></div>
-				    <a class="dropdown-item" href="#">Separated link</a>
-			    </div>
-		    </div>
--->
-		    <!--			    <p class="text-white-75 mb-5">Find the leading trends globally from a broad ranch of topics.</p> -->
-		    <!--                        <a class="btn btn-primary btn-xl" href="#about">Find Out More</a> -->
-		</div>
-	    </div>
-	    </div>
+			</div>
 	</header>
 	<!-- Insert the relevant google_trends HTML over here -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer="defer"></script>
+	<script type="text/javascript" src="../js/index.js" defer="defer"></script>
     </body>
 </html>
