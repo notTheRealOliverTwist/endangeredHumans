@@ -45,10 +45,11 @@
 				</div>
 				<div class="col-lg-8 align-self-baseline">
 					<!-- Must spend tomorrow adding this bad boy. Will seriously make for a cool website -->
-
+<!--
 					<div class="dayMode">
 						<button id="lightMode"></button>
 					</div>
+-->
 					<!-- -->
 
 					<!-- NEW BUTTON GROUP -->
@@ -71,18 +72,31 @@
 								<div id="divaaa1"></div>
 							</div>
 						</div>
-					</div>
-					<div class="countryContainer">
-						<select id="countries" class="selectpicker"name="countrySelection"></select>
-					</div>
-					<div class="dateContainer">
-						<form action="">
-							<input type="date" id="calendar" name="calendar">
-						</form>
-					</div>
-					<div class="keywordContainer">
-						<input id="keyword" type="text" placeholder="Enter Keyword">
-					</div></br>
+						<nav class="trendMenu">
+							<ol>
+								<li class="country-list menu-item">Countries
+									<ol>
+										<li class="country-menu">
+											<select id="countries" class="selectpicker hideOptions"name="countrySelection"></select>
+										</li>
+									</ol>
+								</li>
+								<li class="calendar-list menu-item">Calendar
+									<ol>
+										<li class="calendar-menu">
+											<input type="date" id="calendar" class="hideOptions" name="calendar">
+										</li>
+									</ol>
+								</li>
+								<li class="keyword-list menu-item">Keyword
+									<ol>
+										<li class="keyword-field">
+											<input id="keyword" type="text" class="hideOptions" placeholder="Enter Keyword">
+										</li>
+									</ol>
+								</li>
+							</ol>
+						</nav>
 				</div>
 
 			</div>

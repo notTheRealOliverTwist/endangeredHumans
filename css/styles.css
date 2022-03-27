@@ -11795,9 +11795,8 @@ margin-left: 10%;
 	padding-bottom:5px;
 	cursor:pointer;
 }
-#countries{
+/*#countries{
 	background-color: red;
-	padding: 10px 0 10px 0;
 	border-radius: 10px;
 	border: 5px solid white;
 	text-align: center;
@@ -11805,7 +11804,7 @@ margin-left: 10%;
 	font-size: 1.2em;
 	display: inline-block;
 	margin-top: 10%;
-}
+}*/
 select option {
 	background: #181818;
 	color: #fff;
@@ -11814,7 +11813,7 @@ select option {
 option:hover{
 	background-color: orange;
 }
-#calendar{
+/*#calendar{
 	background: #181818;
 	color: white;
 	padding: 20px;
@@ -11828,7 +11827,7 @@ option:hover{
 	padding: 20px;
 }
 #keyword{
-	padding: 5px 0 5px 0;
+	padding: 0 0 0 0;
 	margin: 5% 0 5% 0;
 	display: inline-block;
 	text-align: center;
@@ -11842,4 +11841,125 @@ option:hover{
 	border: 0;
 	border-bottom: 4px solid #11998e;
 	box-shadow: none;
+}
+
+.hideOptions{
+	visibility: hidden;
+}
+*/
+
+.trendMenu
+{
+  background: #27ae60;
+  border-radius: 6px;
+  margin-top: 30%;
+  padding: 5px 0px;
+}
+
+.trendMenu ol
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.trendMenu ol li
+{
+  list-style: none;
+  padding: 5px 30px;
+  position: relative;
+  transition: 0.5s;
+  display: block;
+}
+
+
+.country-list:hover ol
+{
+
+  display: block;
+  position: absolute;
+  margin-top: 5px;
+  background: #27ae60;
+  border-radius: 6px;
+  width: 100%;
+  box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+  font-size: 0.8em;
+  z-index: 1;
+
+}
+.country-list:hover, .keyword-list:hover, .calendar-list:hover{
+	color: white;
+	font-size: 1.2em;
+}
+
+.country-list:hover ol li{
+        display: block;
+        position: absolute;
+        border-radius: 5px;
+        width:100%;
+        right: 15%;
+        z-index: 2;
+        background: #27ae60;
+        box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+}
+
+.trendMenu ol li ol
+{
+  display: none;
+  width: 100%;
+  padding: 0px 150%;
+  left: -21%;
+  top: 90%;
+}
+.trendMenu ol li ol li{
+	margin-left: 25%;
+}
+
+.calendar-list:hover ol
+{
+  display: block;
+  position: absolute;
+  margin-top: 5px;
+  background: #27ae60;
+  border-radius: 6px;
+  width: 100%;
+  box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+	font-size: 0.8em;
+	z-index: 1;
+}
+
+.calendar-list:hover ol li{
+	display: block;
+	position: absolute;
+	border-radius: 5px;
+	width:100%;
+	right: 25%;
+	z-index: 2;
+	background: #27ae60;
+	box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+}
+.keyword-list:hover ol{
+        display: block;
+        position: absolute;
+	margin-top: 5px;
+        border-radius: 5px;
+        width:100%;
+        background: #27ae60;
+        box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+	z-index: 1;
+	font-size: 0.8em;
+}
+.keyword-list:hover ol li{
+        display: block;
+        position: absolute;
+        border-radius: 5px;
+        width:100%;
+        right: 45%;
+        z-index: 2;
+        background: #27ae60;
+        box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+}
+#keyword{
+	background: black;
+	color: white;
 }
