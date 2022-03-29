@@ -11833,10 +11833,16 @@ visibility: hidden;
 
 .trendMenu
 {
+<<<<<<< HEAD
 	background: #27ae60;
 	border-radius: 6px;
 	margin-top: 30%;
 	margin-bottom: 50%;
+=======
+  background: #27ae60;
+  border-radius: 6px;
+  margin-top: 30%;
+>>>>>>> 7270d6c78d851b3ed8976ed19cf5c3fc9a8725d6
 }
 
 .trendMenu ol
