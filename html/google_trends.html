@@ -72,37 +72,71 @@
 								<div id="divaaa1"></div>
 							</div>
 						</div>
-						<nav class="trendMenu">
+						<nav id="trend-list" class="trendMenu hideOptions">
 							<ol>
-								<li class="country-list menu-item">Countries
+								<li id="country-menu" class="country-list menu-item hideOptions">Countries
 									<ol>
 										<li class="country-menu">
-											<select id="countries" class="selectpicker hideOptions"name="countrySelection"></select>
+											<select id="countryMenu" class="selectpicker"name="countrySelection" onchange="chooseState();"></select>
 										</li>
 									</ol>
 								</li>
-								<li class="calendar-list menu-item">Calendar
+								<li id="state-menu" class="state-list menu-item hideOptions">State
+									<ol>
+										<li class="state-menu">
+											<select id="stateMenu" class="selectpicker" name="stateSelection" onchange="chooseCity();"></select>
+										</li>
+									</ol>
+								</li>
+								<li id="city-menu" class="city-list menu-item hideOptions">City
+									<ol>
+										<li class="city-menu">
+											<select id="cityMenu" class="selectpicker" name="citySelection"></select>
+										</li>
+									</ol>
+								</li>
+								<li id="calendar-menu" class="calendar-list menu-item hideOptions">Calendar
 									<ol>
 										<li class="calendar-menu">
-											<input type="date" id="calendar" class="hideOptions" name="calendar">
+											<input type="date" id="calendar" name="calendar">
 										</li>
 									</ol>
 								</li>
-								<li class="keyword-list menu-item">Keyword
+								<li id="keyword-menu" class="keyword-list menu-item hideOptions">Keyword
 									<ol>
 										<li class="keyword-field">
-											<input id="keyword" type="text" class="hideOptions" placeholder="Enter Keyword">
+											<input id="keyword" type="text" placeholder="Enter Keyword">
 										</li>
 									</ol>
 								</li>
 							</ol>
 						</nav>
+						<div class="country-additionals">
+							<ol>
+								<li class="stateCheckBox">
+									<label for="state-toggle" class='state-label'>Search By State</label>
+									<input type="checkbox" id="state-toggle" class="toggle--checkbox">
+									<label for="state-toggle" class="toggle--label"><span class='state-label'></span>
+									</label>
+								</li>
+								<li class="cityCheckBox">
+									<label for='city-toggle' class='city-label'>Search By City</label>
+									<input type="checkbox" id="city-toggle" class="toggle--checkbox">
+									<label for="city-toggle" class="toggle--label"><span class='city-label'></span>
+									</label>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class='google-submit-btn'>
+						<button type='button' class='g-submit-btn'>Launch Portal</button>
+					</div>
+					</br>
 				</div>
-
-			</div>
 	</header>
 	<!-- Insert the relevant google_trends HTML over here -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer="defer"></script>
+	<script type="text/javascript" src="../js/browserifyFinal.js" defer="defer"></script>
 	<script type="text/javascript" src="../js/index.js" defer="defer"></script>
     </body>
 </html>

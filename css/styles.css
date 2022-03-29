@@ -11660,6 +11660,7 @@ margin-left: 10%;
 		background:#34a853;
 	}
 }
+
 #div1{
 	position:absolute;
 	left:calc(50% - 300px);
@@ -11697,7 +11698,7 @@ margin-left: 10%;
 	transition:.6s;
 }
 
-#divaa1:hover{
+#diva1:hover > #divaa1{
 	height:300px;
 	width: 130px;
 	background: orange;
@@ -11716,7 +11717,7 @@ margin-left: 10%;
 	transition:.6s;
 }
 
-#divaa1:hover > #divaaa1{
+#diva1:hover #divaaa1{
 	height:240px;
 	border:5px solid orange;
 	background: orange;
@@ -11740,7 +11741,7 @@ margin-left: 10%;
 	transition:.6s;
 	z-index: 1;
 }
-#divaa1:hover > #btna1{
+#diva1:hover #btna1{
 	top:90px;
 	color:white;
 	background:black;
@@ -11764,7 +11765,7 @@ margin-left: 10%;
 	transition:.6s;
 	z-index: 1;
 }
-#divaa1:hover > #btna2{
+#diva1:hover #btna2{
 	top:140px;
 	color:white;
 	background:black;
@@ -11788,128 +11789,111 @@ margin-left: 10%;
 	transition:.6s;
 	z-index: 1;
 }
-#divaa1:hover > #btna3{
+#diva1:hover #btna3{
 	top:190px;
 	color:white;
 	background:black;
 	padding-bottom:5px;
 	cursor:pointer;
 }
-/*#countries{
-	background-color: red;
-	border-radius: 10px;
-	border: 5px solid white;
-	text-align: center;
-	color: white;
-	font-size: 1.2em;
-	display: inline-block;
-	margin-top: 10%;
-}*/
-select option {
-	background: #181818;
-	color: #fff;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-}
-option:hover{
-	background-color: orange;
-}
+
 /*#calendar{
-	background: #181818;
-	color: white;
-	padding: 20px;
-	border-radius: 5px;
-	border: 5px solid white;
+background: #181818;
+color: white;
+padding: 20px;
+border-radius: 5px;
+border: 5px solid white;
 }
 
 .dateContainer{
-	display: inline-block;
-	margin-top: 10%;
-	padding: 20px;
+display: inline-block;
+margin-top: 10%;
+padding: 20px;
 }
 #keyword{
-	padding: 0 0 0 0;
-	margin: 5% 0 5% 0;
-	display: inline-block;
-	text-align: center;
-	background-color: transparent;
-	border: 0;
-	border-bottom: 3px solid white;
-	color: white;
+padding: 0 0 0 0;
+margin: 5% 0 5% 0;
+display: inline-block;
+text-align: center;
+background-color: transparent;
+border: 0;
+border-bottom: 3px solid white;
+color: white;
 }
 
 #keyword:focus{
-	border: 0;
-	border-bottom: 4px solid #11998e;
-	box-shadow: none;
-}
-
-.hideOptions{
-	visibility: hidden;
+border: 0;
+border-bottom: 4px solid #11998e;
+box-shadow: none;
 }
 */
+.hideOptions{
+visibility: hidden;
+}
 
 .trendMenu
 {
-  background: #27ae60;
-  border-radius: 6px;
-  margin-top: 30%;
-  padding: 5px 0px;
+	background: #27ae60;
+	border-radius: 6px;
+	margin-top: 30%;
+	margin-bottom: 50%;
 }
 
 .trendMenu ol
 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .trendMenu ol li
 {
-  list-style: none;
-  padding: 5px 30px;
-  position: relative;
-  transition: 0.5s;
-  display: block;
+	list-style: none;
+	padding: 5px 30px;
+	position: relative;
+	transition: 0.5s;
+	display: block;
 }
 
 
 .country-list:hover ol
 {
 
-  display: block;
-  position: absolute;
-  margin-top: 5px;
-  background: #27ae60;
-  border-radius: 6px;
-  width: 100%;
-  box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
-  font-size: 0.8em;
-  z-index: 1;
+	display: block;
+	position: absolute;
+	margin-top: 5px;
+	background: #27ae60;
+	border-radius: 6px;
+	width: 100%;
+	box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+	font-size: 0.8em;
+	z-index: 1;
 
 }
-.country-list:hover, .keyword-list:hover, .calendar-list:hover{
+.country-list:hover, .keyword-list:hover, .calendar-list:hover, .state-list:hover, .city-list:hover{
 	color: white;
 	font-size: 1.2em;
 }
 
 .country-list:hover ol li{
-        display: block;
-        position: absolute;
-        border-radius: 5px;
-        width:100%;
-        right: 15%;
-        z-index: 2;
-        background: #27ae60;
-        box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+	display: block;
+	position: absolute;
+	border-radius: 5px;
+	width:100%;
+	right: 15%;
+	z-index: 2;
+	background: #27ae60;
+	box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+	margin-bottom: 25%;
 }
 
 .trendMenu ol li ol
 {
-  display: none;
-  width: 100%;
-  padding: 0px 150%;
-  left: -21%;
-  top: 90%;
+	display: none;
+	width: 100%;
+	padding: 0px 150%;
+	left: -21%;
+	top: 90%;
 }
 .trendMenu ol li ol li{
 	margin-left: 25%;
@@ -11917,13 +11901,13 @@ option:hover{
 
 .calendar-list:hover ol
 {
-  display: block;
-  position: absolute;
-  margin-top: 5px;
-  background: #27ae60;
-  border-radius: 6px;
-  width: 100%;
-  box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+	display: block;
+	position: absolute;
+	margin-top: 5px;
+	background: #27ae60;
+	border-radius: 6px;
+	width: 100%;
+	box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
 	font-size: 0.8em;
 	z-index: 1;
 }
@@ -11939,27 +11923,274 @@ option:hover{
 	box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
 }
 .keyword-list:hover ol{
-        display: block;
-        position: absolute;
+	display: block;
+	position: absolute;
 	margin-top: 5px;
-        border-radius: 5px;
-        width:100%;
-        background: #27ae60;
-        box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	width:100%;
+	background: #27ae60;
+	box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
 	z-index: 1;
 	font-size: 0.8em;
 }
 .keyword-list:hover ol li{
-        display: block;
-        position: absolute;
-        border-radius: 5px;
-        width:100%;
-        right: 45%;
-        z-index: 2;
-        background: #27ae60;
-        box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+	display: block;
+	position: absolute;
+	border-radius: 5px;
+	width:100%;
+	right: 45%;
+	z-index: 2;
+	background: #27ae60;
+	box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
 }
 #keyword{
-	background: black;
+	background: #181818;
 	color: white;
+}
+#countryMenu, #stateMenu, #cityMenu{
+	width: 80%;
+	padding: 2px 0px;
+	background-color: #181818;
+	color: white;
+	text-align: center;
+}
+select option {
+	background: #181818;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+input[type="date"] {
+     -webkit-align-items: center;
+     display: -webkit-inline-flex;
+     font-family: monospace;
+     overflow: hidden;
+     padding: 0;
+     -webkit-padding-start: 1px;
+     background-color: #181818;
+     color: white;
+}
+
+input::-webkit-datetime-edit {
+    -webkit-flex: 1;
+    -webkit-user-modify: read-only !important;
+    display: inline-block;
+    min-width: 0;
+    overflow: hidden;
+}
+
+input::-webkit-datetime-edit-fields-wrapper {
+    -webkit-user-modify: read-only !important;
+    display: inline-block;
+    padding: 1px 0;
+    white-space: pre;
+}
+.country-additionals{
+	background: #4285f4;
+	border-radius: 3px;
+	padding: 10px 15px;
+	display: block;
+	position: absolute;
+	width: 100%;
+	margin-top: -40%;
+}
+.stateCheckBox, .cityCheckBox{
+        list-style: none;
+        padding: 5px 30px;
+        transition: 0.5s;
+        display: block;
+	margin-left: 50%;
+}
+.state-label, .city-label{
+	color: white;
+	display: inline;
+	width: 100%;
+	padding: 5px 25px;
+	font-family: Arial;
+	position: absolute;
+	margin-left: -80%;
+	z-index: 2;
+}
+:root {
+  /** sunny side **/
+  --blue-background: #C2E9F6;
+  --blue-border: #72cce3;
+  --blue-color: #96dcee;
+  --yellow-background: #fffaa8;
+  --yellow-border: #f5eb71;
+  /** dark side **/
+  --indigo-background: #808fc7;
+  --indigo-border: #5d6baa;
+  --indigo-color: #6b7abb;
+  --gray-border: #e8e8ea;
+  --gray-dots: #e8e8ea;
+  /** general **/
+  --white: #fff;
+}
+.toggle--checkbox {
+  display: none;
+}
+.toggle--checkbox:checked {
+  /** This will all flip from sun to moon **/
+  /** Change the label color **/
+}
+.toggle--checkbox:checked ~ .background {
+  background: var(--indigo-background);
+}
+.toggle--checkbox:checked + .toggle--label {
+  background: red;
+  border-color: var(--gray-border);
+  /** Change the cloud to stars **/
+  /** Change the sun into the moon **/
+  /** Show the dimples on the moon **/
+}
+.toggle--checkbox:checked + .toggle--label .toggle--label-background {
+  left: 15px;
+  width: 1.25px;
+}
+.toggle--checkbox:checked + .toggle--label .toggle--label-background:before {
+  width: 1.25px;
+  height: 1.25px;
+  top: -25px;
+}
+.toggle--checkbox:checked + .toggle--label .toggle--label-background:after {
+  width: 1.25px;
+  height: 1.25px;
+  left: -7.5px;
+  top: 13px;
+}
+.toggle--checkbox:checked + .toggle--label:before {
+  background: var(--white);
+  border-color: var(--gray-border);
+  animation-name: switch;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+}
+.toggle--checkbox:checked + .toggle--label:after {
+  transition-delay: 350ms;
+  opacity: 1;
+}
+.toggle--label {
+  /** Placeholder element, starting at blue **/
+  width: 50px;
+  height: 25px;
+  background: limegreen;
+  border-radius: 100px;
+  border: 5px solid var(--gray-border);
+  display: flex;
+  position: relative;
+  transition: all 350ms ease-in;
+  /** The sun cloud and moon stars **/
+  /** Sun/Moon element **/
+  /** Gray dots on the moon **/
+}
+.toggle--label-background {
+  width: 2.5px;
+  height: 2.5px;
+  border-radius: 5px;
+  position: relative;
+  background: var(--white);
+  left: 33.75px;
+  top: 38px;
+  transition: all 150ms ease-in;
+}
+.toggle--label-background:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  width: 10px;
+  height: 1.25px;
+  border-radius: 5px;
+  background: var(--white);
+  left: -5px;
+  transition: all 150ms ease-in;
+}
+.toggle--label-background:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 10px;
+  height: 1.25px;
+  border-radius: 5px;
+  background: var(--white);
+  left: -2.5px;
+  transition: all 150ms ease-in;
+}
+.toggle--label:before {
+  animation-name: reverse;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+  transition: all 350ms ease-in;
+  content: "";
+  width: 20.5px;
+  height: 20.5px;
+  border: 5px solid var(--yellow-border);
+  top: -3px;
+  left: 1px;
+  position: absolute;
+  border-radius: 82px;
+  background: var(--yellow-background);
+}
+.toggle--label:after {
+  transition-delay: 0ms;
+  transition: all 250ms ease-in;
+  position: absolute;
+  content: "";
+  box-shadow: var(--gray-dots) -13px 0 0 2px, var(--gray-dots) -24px 14px 0 -2px;
+  left: 35.75px;
+  top: 16px;
+  width: 2.5px;
+  height: 2.5px;
+  background: transparent;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+@keyframes switch {
+  0% {
+    left: 0px;
+  }
+  60% {
+    left: 0px;
+    width: 28px;
+  }
+  100% {
+    left: 20px;
+    width: 20.5px;
+  }
+}
+
+@keyframes reverse {
+  0% {
+    left: 26px;
+    width: 20.5px;
+  }
+  60% {
+    left: 18px;
+    width: 28px;
+  }
+  100% {
+    left: 1px;
+  }
+}
+
+.google-submit-btn{
+	margin-top: 60%;
+	display: inline-block;
+}
+.g-submit-btn{
+	padding: 5px 10px 5px 10px;
+	background: #ea4335;
+	color: white;
+	font-family: Arial;
+	border-radius: 5px;
+	border: 2px solid white;
+	transition: 0.6s;
+	margin-bottom: 50%;
+}
+
+.g-submit-btn:hover{
+	padding: 6px 11px 6px 11px;
+	font-size: 1.5em;
+	transition: 0.6s;
+
 }
