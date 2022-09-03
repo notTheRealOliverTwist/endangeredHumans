@@ -1,9 +1,7 @@
 /*!
-* Start Bootstrap - Creative v7.0.5 (https://startbootstrap.com/theme/creative)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
+* Licensed under MIT
 */
-//
+// Unfinished, much more to add later
 // Scripts
 // 
 
@@ -15,11 +13,16 @@ window.addEventListener('DOMContentLoaded', event => {
         if (!navbarCollapsible) {
             return;
         }
+        (window.scrollY === 0) ? 
+            navbarCollapsible.classList.add('navbar-shrink') : 
+            navbarCollapsible.classList.add('navbar-shrink');
+        /* May use this instead if you prefer
+        
         if (window.scrollY === 0) {
             navbarCollapsible.classList.remove('navbar-shrink')
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
-        }
+        }*/
 
     };
 
